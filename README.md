@@ -5,3 +5,6 @@ Topics:
  - Exceptions
  - Generators 
  - Iterators
+ 
+ 
+ ##  : C:\Users\Lior\PycharmProjects\nextpy
