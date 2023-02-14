@@ -1,6 +1,4 @@
-# creating a class of our favorite animal
-# updating the code:
-# adding a class that creats a pixel
+# creating classes according to ex. 2.4
 class Tiger:
 
     def __init__(self, name="no_name"):
@@ -63,12 +61,13 @@ class Pixel:
 
 
 def main():
+    print("\nPixel class:")
     pixel = Pixel(5, 6, 255)
     pixel.print_pixel_info()
     pixel.set_grayscale()
     pixel.print_pixel_info()
 
-    # count_animals = 0  # numer of animals from this class
+    print("\nTiger class:")
     miron_tiger = Tiger("Miron")
     shoham_tiger = Tiger()
     print(miron_tiger.get_name())
@@ -77,10 +76,42 @@ def main():
     shoham_tiger.set_name("Shoham")
     print(miron_tiger.get_name())
     print(shoham_tiger.get_name())
-
     miron_tiger.birthday_1()
     miron_tiger.birthday_1()
     print(miron_tiger.get_age())
+
+    print("\nBigThing class:")
+    my_thing = BigThing("balloon")
+    my_thing.size()
+    print("\nBigCat class:")
+    cutie = BigCat("mitzy", 22)
+    cutie.size()
+
+
+class BigThing:
+
+    def __init__(self, thing):
+        self.thing = thing
+
+    def size(self):
+        if isinstance(self.thing, int):
+            print(self.thing)
+        else:
+            print(len(self.thing))
+
+
+class BigCat (BigThing):
+    def __init__(self, thing, weight=0):
+        self.weight = weight
+
+    def size(self):
+        if self.weight > 20:
+            print("Very Fat")
+        elif self.weight > 15:
+            print(" Fat")
+        else:
+            print("OK")
+
 
 
 main()
