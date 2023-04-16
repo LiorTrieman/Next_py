@@ -1,10 +1,10 @@
 # Next_py
 exercises from campus.il course in advance python
 Topics:
- - OOP
+ - one-liner functions (Lambda, map, filter)
+ - OOP (Classes)
  - Exceptions
  - Generators 
  - Iterators
+  - Modules
  
- 
- ##  : C:\Users\Lior\PycharmProjects\nextpy
